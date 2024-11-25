@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Healthcare Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#patients">Patients</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#records">Records</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#prescriptions">Prescriptions</a></li>
+            <li><a href="#admin">Admin Dashboard</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="patients">
+            <h2>Patients</h2>
+            <button onclick="addPatient()">Add Patient</button>
+            <div id="patientsData"></div>
+        </section>
+        <section id="doctors">
+            <h2>Doctors</h2>
+            <button onclick="addDoctor()">Add Doctor</button>
+            <div id="doctorsData"></div>
+        </section>
+        <section id="appointments">
+            <h2>Appointments</h2>
+            <button onclick="scheduleAppointment()">Schedule Appointment</button>
+            <div id="appointmentsData"></div>
+        </section>
+        <section id="records">
+            <h2>Medical Records</h2>
+            <button onclick="addRecord()">Add Record</button>
+            <div id="recordsData"></div>
+        </section>
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <button onclick="sendNotification()">Send Notification</button>
+            <div id="notificationsData"></div>
+        </section>
+        <section id="prescriptions">
+            <h2>Prescriptions</h2>
+            <button onclick="addPrescription()">Add Prescription</button>
+            <div id="prescriptionsData"></div>
+        </section>
+        <section id="admin">
+            <h2>Admin Dashboard</h2>
+            <div id="adminData"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
